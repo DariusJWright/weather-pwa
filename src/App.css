@@ -89,6 +89,10 @@ h2 {
   width: 100px;
 }
 
+sup {
+  font-size: .5em;
+}
+
 p {
   font-size: 1.5rem;
   margin: 0;

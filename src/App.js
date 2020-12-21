@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './App.css';
 import { getWeather } from './api/getWeather';
 
+const favicon = document.getElementById('favicon');
+
 function App() {
   const [query, setQuery] = useState('');
   const [weather, setWeather] = useState({});
@@ -12,6 +14,7 @@ function App() {
     const data = await getWeather(query);
     // const fiveDayData = await getFiveDay(query);
 
+    favicon.href = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     setWeather(data);
     // setFiveDay(fiveDayData);
 
