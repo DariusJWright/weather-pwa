@@ -6,12 +6,17 @@
         <title>Weather</title>
         <style type="text/css">
             html {
-                height: 100%;
+              box-sizing: border-box;  
+              height: 100%;
+              margin: 0;
+              padding: 0;
             }
             body {
                 height: 100%;
                 margin: 0;
-                background: #0a1f44;
+                background: linear-gradient( to right, rgba(26, 124, 63, 0.3), rgba(240, 8, 8, 0.418));
+                background-position: center;
+                background-size: cover;
                 display: flex;
                 align-items: center;
                 text-align: center;
@@ -25,12 +30,13 @@
                 justify-content: center;
                 flex-direction: column;
                 padding: 40px 8%;
-                border-radius: 20px;
-                background: #fff;
+                border-radius: 10px;
+                background: transparent;
             }
 
             .city-name {
-                font-size: 2em;
+                font-size: 3em;
+                color: cornflowerblue;
             }
         </style>
     </head>
